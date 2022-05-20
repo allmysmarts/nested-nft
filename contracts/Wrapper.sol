@@ -14,7 +14,7 @@ contract Wrapper is ERC721 {
         uint256 tokenId;
     }
 
-    mapping(address => bool) isValidCollections;
+    mapping(address => bool) public isValidCollections;
     mapping(uint256 => SeedContent) public seeds;
 
     constructor(address[] memory collectionsList) ERC721("Wrapper NFT", "Wrapper") {
@@ -44,6 +44,8 @@ contract Wrapper is ERC721 {
     }
 
     function unwrap(uint256 tokenId) external {
+        require(tokenId != 0, "Invalid token");
+
         address _owner = ownerOf(tokenId);
         require(_owner == msg.sender, "Invalid owner");
 

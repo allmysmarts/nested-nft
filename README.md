@@ -1,15 +1,11 @@
-# Basic Sample Hardhat Project
+# Nested NFT Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project demonstrates a basic nested relationship between two ERC721 contracts, like `Seed` and `Wrapper`.
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat accounts
 npx hardhat compile
-npx hardhat clean
+
 npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
 ```
