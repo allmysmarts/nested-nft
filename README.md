@@ -8,4 +8,8 @@ Try running some of the following tasks:
 npx hardhat compile
 
 npx hardhat test
+
+npx hardhat run scripts/deploy.js --network rinkeby
+
+npx hardhat run scripts/verify.js --network rinkeby
 ```
