@@ -9,11 +9,9 @@ contract Seed is ERC721 {
 
     Counters.Counter private lastestTokenId;
 
-    uint256 public immutable MINT_PRICE;
+    uint256 public constant MINT_PRICE = 0.01 ether;
 
-    constructor(uint256 mintPrice) ERC721("Seed NFT", "Seed") {
-        MINT_PRICE = mintPrice;
-    }
+    constructor() ERC721("Seed NFT", "Seed") {}
 
     function mint() external payable {
         require(msg.value >= MINT_PRICE, "Invalid fee");

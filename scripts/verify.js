@@ -5,11 +5,9 @@ async function main() {
     console.log("Verifying contract ...");
     try {
         await run("verify:verify", {
-          address: "0x2AF55B385De54E9feD11964529405605269446CF",
+          address: "0x3aF0680AF991B0Be1F6ff084942C53007093B4Ee",
           contract: "contracts/Seed.sol:Seed",
-          constructorArguments: [
-            ethers.utils.parseEther("0.01").toString()
-          ]
+          constructorArguments: []
         });
     } catch (e) {
         console.log("Error while verifying seed contract: ", e)
@@ -17,10 +15,10 @@ async function main() {
 
     try {
         await run("verify:verify", {
-            address: "0x4bB362e6DDD182e9bA09d7E63a25E3C428389AF2",
+            address: "0x3908Eddc3c5aB4Ef05cFA9916c840d57819A9372",
             contract: "contracts/Wrapper.sol:Wrapper",
             constructorArguments: [
-                ["0x2AF55B385De54E9feD11964529405605269446CF"]
+                ["0x3aF0680AF991B0Be1F6ff084942C53007093B4Ee"]
             ]
         });
     } catch (e) {

@@ -8,7 +8,7 @@ describe("Seed and wrapper", function() {
         Seed = await ethers.getContractFactory("Seed")
         Wrapper = await ethers.getContractFactory("Wrapper")
 
-        seed = await Seed.deploy(ethers.utils.parseEther("0.01"))
+        seed = await Seed.deploy()
         await seed.deployed()
 
         wrapper = await Wrapper.deploy([seed.address])

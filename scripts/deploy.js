@@ -8,7 +8,7 @@ async function main() {
     const Seed = await ethers.getContractFactory("Seed");
     const Wrapper = await ethers.getContractFactory("Wrapper")
 
-    const seed = await Seed.deploy(ethers.utils.parseEther("0.01"))
+    const seed = await Seed.deploy()
     await seed.deployed()
 
     const wrapper = await Wrapper.deploy([seed.address])
