@@ -27,6 +27,12 @@ module.exports = {
       gasPrice: "auto",
       accounts: [process.env.PRIVATE_KEY],
     },
+    ropsten: {
+      url: "https://ropsten.infura.io/v3/" + process.env.INFURA_ID,
+      chainId: 3,
+      gasPrice: "auto",
+      accounts: [process.env.PRIVATE_KEY],
+    },
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY

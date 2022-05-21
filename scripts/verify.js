@@ -5,7 +5,7 @@ async function main() {
     console.log("Verifying contract ...");
     try {
         await run("verify:verify", {
-          address: "0x3aF0680AF991B0Be1F6ff084942C53007093B4Ee",
+          address: "0x52eC4c36663AeAF99642542d22a0152cA4295467",
           contract: "contracts/Seed.sol:Seed",
           constructorArguments: []
         });
@@ -15,10 +15,10 @@ async function main() {
 
     try {
         await run("verify:verify", {
-            address: "0x3908Eddc3c5aB4Ef05cFA9916c840d57819A9372",
+            address: "0xCC288708225Cd10f05c16892AD49f04654c0e199",
             contract: "contracts/Wrapper.sol:Wrapper",
             constructorArguments: [
-                ["0x3aF0680AF991B0Be1F6ff084942C53007093B4Ee"]
+                ["0x52eC4c36663AeAF99642542d22a0152cA4295467"]
             ]
         });
     } catch (e) {

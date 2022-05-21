@@ -24,7 +24,7 @@ npx hardhat run scripts/verify.js --network rinkeby
 
 ## Deployed Contracts
 
-Seed:  https://rinkeby.etherscan.io/address/0x3af0680af991b0be1f6ff084942c53007093b4ee
+Seed:  https://ropsten.etherscan.io/address/0x52eC4c36663AeAF99642542d22a0152cA4295467
 
-Wrapper: https://rinkeby.etherscan.io/address/0x3908eddc3c5ab4ef05cfa9916c840d57819a9372
+Wrapper: https://ropsten.etherscan.io/address/0xCC288708225Cd10f05c16892AD49f04654c0e199
 
